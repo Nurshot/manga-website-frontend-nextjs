@@ -1,4 +1,8 @@
+### This is an old project from a year ago. Security vulnerabilities were discovered in Next js, so it is recommended to update it.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
