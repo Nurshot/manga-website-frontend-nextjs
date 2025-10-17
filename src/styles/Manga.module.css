@@ -1,0 +1,262 @@
+.manga-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .manga-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .manga-cover {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .manga-info {
+    flex-grow: 1;
+  }
+  
+  .manga-info h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #66ccff;
+  }
+  
+  .manga-info p {
+    font-size: 1.2em;
+    color: #bbbbbb;
+  }
+  
+  .manga-details {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .manga-details li {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #888;
+  }
+  
+  .manga-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .manga-buttons button {
+    background-color: #34c759;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .manga-buttons button:hover {
+    background-color: #28a745;
+  }
+  
+  .manga-chapters {
+    margin-top: 20px;
+  }
+  
+  .manga-chapters h2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .manga-chapters .sort-button {
+    margin-left: 10px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #66ccff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .manga-chapters .sort-button:hover {
+    color: #ffffff;
+  }
+  
+  .chapters-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chapter-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .chapter-item:hover {
+    background-color: #2b2d40;
+  }
+  
+  .chapter-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #66ccff;
+  }
+  
+  .chapter-item p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #bbbbbb;
+  }
+  
+  /* Responsive Layouts */
+  @media (max-width: 768px) {
+    .manga-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .manga-cover {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .manga-info h1 {
+      font-size: 1.5em;
+    }
+  
+    .manga-info p {
+      font-size: 1em;
+    }
+  
+    .chapter-item h3 {
+      font-size: 1em;
+    }
+  
+    .chapter-item p {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Additions for icon styling */
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Button Styling */
+  .manga-buttons button {
+    display: flex;
+    align-items: center;
+    background-color: #34c759;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .manga-buttons button:hover {
+    background-color: #28a745;
+  }
+  
+  .manga-details {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .manga-details li {
+    width: 45%;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #888;
+  }
+  
+  .manga-details li strong {
+    color: #bbbbbb;
+  }
+  
+  .manga-comments {
+    margin-top: 20px;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .manga-comments h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    border-bottom: 2px solid #3ba55d;
+    padding-bottom: 5px;
+  }
+  
+  .comments-list {
+    margin-bottom: 20px;
+  }
+  
+  .comment-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #3ba55d;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+  }
+  
+  .comment-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #ccc;
+  }
+  
+  .comment-item small {
+    display: block;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .add-comment {
+    margin-top: 20px;
+  }
+  
+  .add-comment textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #3ba55d;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ccc;
+    resize: none;
+    box-sizing: border-box;
+  }
+  
+  .add-comment button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #3ba55d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-comment button:hover {
+    background-color: #2c8f4d;
+  }

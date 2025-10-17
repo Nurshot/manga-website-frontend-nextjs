@@ -1,0 +1,170 @@
+
+
+/* Home Container */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Banner Section */
+.banner {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  text-align: center;
+  background-repeat:no-repeat;
+  
+}
+
+.banner img {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.banner .series-info {
+  margin-top: 20px;
+}
+
+.banner .series-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+} /* Added missing closing brace */ /* Added missing closing brace */
+
+.banner .series-info p {
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+.banner .series-info button {
+  background-color: #66ccff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner .series-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Latest Chapters Section */
+.latest-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.latest-chapters .chapter-item {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.latest-chapters .chapter-item:hover {
+  background-color: #3b3b3b;
+}
+
+.latest-chapters .chapter-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.latest-chapters .chapter-info {
+  padding: 10px;
+}
+
+.latest-chapters .chapter-info h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #66ccff;
+}
+
+.latest-chapters .chapter-info h4 {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.latest-chapters .chapter-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #bbbbbb;
+}
+
+/* Recently Published Section */
+.recently-published {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.recently-published h2 {
+  margin-bottom: 20px;
+  color: #66ccff;
+}
+
+/* Responsive Layouts */
+@media (max-width: 1200px) {
+  .home {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner .series-info h3,
+  .recently-published h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    max-width: 200px;
+  }
+
+  .banner .series-info h3,
+  .recently-published h3 {
+    font-size: 1.2em;
+  }
+
+  .latest-chapters .chapter-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner .series-info {
+    text-align: left;
+  }
+
+  .banner .series-info button {
+    width: 100%;
+  }
+
+  .latest-chapters {
+    flex-direction: column;
+  }
+
+  .latest-chapters .chapter-item {
+    width: 100%;
+  }
+}
+
+/* Mevcut CSS Dosyanıza Ekleyin (Homepage.module.css) */
